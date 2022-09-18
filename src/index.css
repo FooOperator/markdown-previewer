@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind variants;
+
+@layer base {
+  html,
+  body {
+    @apply h-screen w-screen;
+  }
+
+  #root {
+    @apply h-full w-full;
+  }
+
+  .stack {
+    @apply flex flex-col;
+  }
+}

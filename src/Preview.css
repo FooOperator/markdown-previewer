@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind variants;
+@tailwind utilities;
+
+@layer base {
+  .preview {
+    h1 {
+      @apply text-4xl border-b-2 mb-2;
+    }
+
+    h2 {
+      @apply text-3xl border-b-2 mb-1.5;
+    }
+
+    h3 {
+      @apply text-2xl border-b-2 mb-1;
+    }
+
+    h4 {
+      @apply text-xl border-b-2 mb-0.5;
+    }
+
+    h5 {
+      @apply text-lg border-b-2 mb-[0.2rem];
+    }
+
+    h6 {
+      @apply text-lg border-b-2 mb-[0.15rem];
+    }
+
+    a {
+      @apply underline text-teal-500 hover:text-teal-200;
+    }
+
+    ul,
+    li {
+      @apply marker:text-teal-500 list-inside;
+    }
+
+    ul {
+      @apply list-disc;
+    }
+
+    ol {
+      @apply list-decimal;
+    }
+
+    blockquote {
+      @apply indent-6 border-l-4 border-slate-600 bg-slate-200;
+    }
+
+    code {
+      @apply bg-slate-900 text-white font-medium py-0.5 px-1 rounded-md;
+    }
+  }
+}
